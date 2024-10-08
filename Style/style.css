@@ -1,0 +1,505 @@
+@font-face {
+    font-family: 'NetflixSans-Regular.otf';
+    src: url('/font/NetflixSans-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'NetflixSans-Regular.otf', Gill Sans, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#a{
+    color:rgb(229, 9, 20);
+    font-size: 10px;
+    position: sticky;
+    top: 0;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: rgb(33, 33, 33);
+}
+
+.head {
+    margin: auto;
+    width: 80vw;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#icon {
+    width: 184px;
+    height: 40px;
+}
+
+.leftmenu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.lang {
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.lang span {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    align-self: center;
+    left: 7px;
+    font-size: 14px;
+}
+
+.lang select {
+    color: white;
+    font-size: 12px;
+    padding: 6px;
+    padding-left: 23px;
+    background-color: rgba(0, 0, 0, 0.638);
+    border: 1px solid rgba(255, 255, 255, 0.524);
+}
+
+.signinbtn button {
+    padding: 7px 10px;
+    background-color: rgb(229, 9, 20);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.signinbtn button:hover {
+    background-color: rgb(163, 0, 8);
+    transition: background-color 0.5s ease-in;
+}
+
+.content {
+    background-position: center;
+    height: 43.75rem;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url('/Images/IN-en-20240115-trifectadaily-perspective_alpha_website_large.jpg');
+}
+
+.container1 {
+    height: 91%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.box1 {
+    color: white;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.box1 h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.box1 p {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.newslettercontainer p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.newslettercontainer {
+    color: white;
+}
+
+.newsletter {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter button {
+    color: white;
+    height: auto;
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(229, 9, 20);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: rgb(163, 0, 8);
+    transition: background-color 0.5s ease-in;
+}
+
+.newsletter button span {
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.emailbox {
+    height: 56px;
+    position: relative;
+}
+
+.emailbox label {
+    position: absolute;
+    color: grey;
+    pointer-events: none;
+    bottom: 18px;
+    left: 15px;
+    transition: all 0.3s ease;
+}
+
+.emailbox input {
+    width: 380px;
+    height: 100%;
+    padding-left: 15px;
+    background-color: rgba(0, 0, 0, 0.625);
+    color: white;
+    font-size: 16px;
+    outline: 1px solid rgba(249, 249, 249, 0.619);
+    border: none;
+    border-radius: 5px;
+    transition: all ease-in-out 1s;
+}
+
+.emailbox input:focus~label,
+.emailbox input:valid~label {
+    transform: translateY(-20px);
+    font-size: 12px;
+}
+
+.emailbox input:focus {
+    outline: none;
+    border: 2px solid white;
+}
+
+.emailbox input:valid {
+    outline: none;
+    border: 1px solid rgb(0, 141, 47);
+}
+
+.containerbackground {
+    background-color: black;
+    width: 100vw;
+    margin: auto;
+}
+
+.mainbackgrounf {
+    background-color: rgba(50, 50, 50, 0.686);
+}
+
+.container {
+    margin: auto;
+    margin-top: 15px;
+    width: 80vw;
+    height: 35rem;
+    /* padding: 50px; */
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.context {
+    margin-left: 100px;
+}
+
+.context h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+
+.context p {
+    line-height: 1.5;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.conimage {
+    margin-right: 100px;
+    position: relative;
+}
+
+.con2image img {
+    width: 100%;
+}
+
+.con2image video {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    top: 21%;
+    left: 13%;
+}
+
+.con4image {
+    position: relative;
+}
+
+.con4image img {
+    position: relative;
+    z-index: 1;
+}
+
+.con4image video {
+    object-fit: contain;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 67%;
+    max-height: 45%;
+    top: 7%;
+    left: 16%;
+}
+
+.tvframe {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+.ques {
+    margin: auto;
+    width: 80vw;
+}
+
+.btnbox {
+    display: flex;
+    height: 50px;
+    padding: 40px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(58, 58, 58);
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.btnbox:hover {
+    background-color: rgb(88, 88, 88);
+}
+
+.questxt {
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+}
+
+.googleicon {
+    color: white;
+    font-size: 50px
+}
+
+.quesbox {
+    margin-top: 10px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quesbox h2 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.news2 {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.calltext {
+    color: rgb(205, 205, 205);
+}
+
+.calltext a {
+    color: rgb(205, 205, 205);
+}
+
+.footercontainer {
+    width: 100vw;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background-color: black;
+}
+
+.footerbox {
+    background-color: black;
+    width: 80%;
+    margin: auto;
+}
+
+.footergrid {
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 4;
+    row-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footergrid a {
+    cursor: pointer;
+    width: fit-content;
+    color: rgb(205, 205, 205);
+}
+
+.griditem1 {
+    grid-column: 1/5;
+}
+
+.tagtext {
+    margin-top: 20px;
+    color: aliceblue;
+}
+
+#q1div {
+    margin-top: 3px;
+    padding: 20px;
+    background-color: rgb(97, 93, 93);
+    display: none;
+}
+
+.q1txt {
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+@media screen and (max-width:950px) {
+    .container {
+        flex-direction: column;
+        /* justify-content:center; */
+        align-items: center;
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    .conimage {
+        align-self: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .context {
+        margin: 0;
+    }
+
+    .box1 h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        width: 80vw;
+    }
+
+    .box1 p {
+        font-size: 1.125rem;
+        font-weight: 400;
+        width: 80vw;
+    }
+
+    .context h2 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .context p {
+        font-size: 1.125rem;
+        font-weight: 400;
+    }
+
+    .ques {
+        width: 90vw;
+    }
+
+    .questxt {
+        font-size: 15px;
+    }
+
+    .q1txt {
+        font-size: 15px;
+    }
+
+    .googleicon {
+        font-size: 25px;
+    }
+
+    .quesbox h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        width: 80vw;
+    }
+
+    .footergrid {
+        grid-template-columns: 2;
+    }
+
+    .griditem1 {
+        grid-column: 1/3;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .newsletter {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .newsletter button {
+        width: 200px;
+    }
+
+    .newslettercontainer p {
+        font-size: 16px;
+        width: 80vw;
+    }
+
+    .emailbox input {
+        max-width: 300px;
+    }
+
+    .quesbox {
+        padding: 0;
+        padding-top: 30px;
+        align-items: center;
+    }
+
+    .head {
+        width: 100%;
+    }
+}
